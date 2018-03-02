@@ -59,4 +59,24 @@
     <servlet-name>ContentServlet</servlet-name>
     <url-pattern>/content</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet1</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>com.itheima.forward.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet2</display-name>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>com.itheima.forward.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
 </web-app>
