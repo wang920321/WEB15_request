@@ -2,7 +2,6 @@ package com.itheima.content;
 
 import java.io.IOException;
 import java.util.Enumeration;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -16,7 +15,7 @@ public class ContentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-	/*	//1获得单个表单值
+		//1获得单个表单值
 		String username = req.getParameter("username");
 		System.out.println(username);
 		String password = req.getParameter("password");
@@ -29,7 +28,7 @@ public class ContentServlet extends HttpServlet {
 		Enumeration<String> parameterNames = req.getParameterNames();
 		while(parameterNames.hasMoreElements()){
 			System.out.println(parameterNames.nextElement());
-		}*/
+		}
 		Map<String, String[]> parameterMap = req.getParameterMap();
 		Set<Entry<String, String[]>> entrySet = parameterMap.entrySet();
 		for (Entry<String, String[]> entry : entrySet) {
