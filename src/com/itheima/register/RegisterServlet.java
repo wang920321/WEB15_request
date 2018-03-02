@@ -58,7 +58,8 @@ public class RegisterServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		//4认为注册成功跳转到登录页面
+		res.sendRedirect(req.getContextPath()+"/login.jsp");
 		
 	}
 	//注册的方法
